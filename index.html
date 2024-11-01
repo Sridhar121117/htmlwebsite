@@ -71,4 +71,96 @@
             margin: 20px 0;
         }
 
-        /* Contact Form
+        /* Contact Form Styling */
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <p>A little place on the internet about me</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-image">
+            <p>Hello! My name is [Your Name], and I'm a passionate web developer with a love for coding and creating beautiful web experiences. I specialize in HTML, CSS, and JavaScript, and I am constantly learning new technologies.</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Here are some of my recent projects:</p>
+            <ul>
+                <li><strong>Project 1:</strong> <a href="https://example.com" target="_blank">Online Store</a> - An e-commerce platform with a responsive design and dynamic shopping cart.</li>
+                <li><strong>Project 2:</strong> <a href="https://example.com" target="_blank">Blog Platform</a> - A blog website where users can post articles, comment, and like posts.</li>
+                <li><strong>Project 3:</strong> <a href="https://example.com" target="_blank">Portfolio Site</a> - A personal portfolio to showcase my work and skills.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, please fill out the form below:</p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
